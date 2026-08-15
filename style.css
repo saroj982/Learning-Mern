@@ -1,0 +1,31 @@
+h1 {
+  text-align: center;
+  letter-spacing: 1rem;
+}
+
+#title {
+  color: rgb(13, 149, 198);
+}
+
+.heading {
+  color: blueviolet;
+}
+
+h2 {
+  font-size: 3rem;
+  color: green;
+}
+
+.info {
+  font-size: 1.5rem;
+  color: chocolate;
+}
+
+h3 {
+   color: blue; /*basic color */
+  color:#00ffd5; /*hex color */
+  color:rgb(178, 55, 31); /*rgb color */
+  background-color: #28aeb6;
+  background-color: rgba(255,255,0,0.5); /*a means alpha for transparency.*/
+
+}

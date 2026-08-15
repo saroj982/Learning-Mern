@@ -58,6 +58,7 @@
 - Colspan -> <colspan="2">
 
 6. Form
+
 - Form -> <form action="">
 - input -> <input type=""> -> text,number,email, tel, checkbox, radio, file, date, time, range, color, password, submit, search etc.
 - Properties -> placeholder, min, max, placeholder, value, checked accept( for image:.jpeg,.png), multiple for multiple file select, required, disabled, selected etc.
@@ -66,3 +67,86 @@
 - Text Area -> <textarea>
 - Select and Option for dropdown-> <select> <option></option> </select>
 - search -> input type search then list="animals" then datalist id same as list name. then inside options.
+
+7. Inline & Block elements
+
+- Inline elements occupies only the required space. for eg -> <a>, <img>, <video>, <span> etc.
+- Block elements occupy full width of the screen like <h1>-<h6>, <p>, <div>, <li>
+
+8. Semantics
+
+- All html elements must be in lowercase.
+- Use proper elements as per their position and usage.
+- Always add 'alt' property in the image tag
+- Always add 'title' property in the button tag especially icon only button.
+- HTML file name must be in kebab case. for e.g in small letter if two words then 'hello-world.html'.
+- Always format your code using shortcut key alt+shift+f.
+- In each html file/page. there must be at least one <h1></h1> tag.
+
+9.  HTML Page
+      <body>
+        <header>
+            <nav></nav>
+        </header>
+        <main>
+            <aside>
+                <div></div>
+                <div></div>
+                <div></div>
+            </aside>
+
+            <section></section>
+            <section></section>
+            <section></section>
+            <section></section>
+        </main>
+        <footer></footer>
+
+    </body>
+
+### CSS: Cascading Style Sheet
+
+- Website styling like color, font-size, aligmnent, spacing etc.
+
+**_Syntax_**
+<selector>{
+property:value;
+property:value;
+...
+}
+For example:
+h1{
+color:red;
+Font-Family:San-serrif
+}
+
+## Selectors
+
+1.  Element -> h1, img, p, span etc. (lowest priority)
+2.  Class -> (priority id > class > element){
+    .classname{
+    property:value;
+    }
+    }
+3.  id ->(Highest priority) {
+    #idname{
+    property:value;
+    }
+    }
+
+## Class vs id## (Semantics)
+
+- For css, always uses class
+- for js, use id
+
+## css Usage
+
+1. Inline
+2. Internal (not used often)
+3. External
+
+### CSS Properties###
+1. color, Background color
+- rgb(red, green, blue)-> rgb range(0-255,0-255,0-255).(0,0,0)->black, (255,255,255)->white etc.
+- hexadecimal (0-F) eg:6digits->FF0000 =red color.
+- rgba(255,255,0,0.5)
