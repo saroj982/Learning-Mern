@@ -1,6 +1,6 @@
-h1 {
-  text-align: center;
-  letter-spacing: 1rem;
+* {
+  margin: 0;
+  padding: 0;
 }
 
 #title {
@@ -22,10 +22,104 @@ h2 {
 }
 
 h3 {
-   color: blue; /*basic color */
-  color:#00ffd5; /*hex color */
-  color:rgb(178, 55, 31); /*rgb color */
+  color: blue; /*basic color */
+  color: #00ffd5; /*hex color */
+  color: rgb(178, 55, 31); /*rgb color */
   background-color: #28aeb6;
-  background-color: rgba(255,255,0,0.5); /*a means alpha for transparency.*/
+  background-color: rgba(255, 255, 0, 0.5); /*a means alpha for transparency.*/
+}
 
+/* text styles */
+.title {
+  text-align: center; /*doesnt work in inline elements*/
+  /* line through, dotted, wavy */
+  text-decoration: underline wavy;
+  /* upppercase,lowercase,capatilaize */
+  text-transform: uppercase;
+  word-spacing: 15px;
+  letter-spacing: 8px;
+  /* x-axis,y-axis spread color */
+  text-shadow: 3px 3px 5px red;
+}
+
+.para {
+  /* left, right, center, justify */
+  text-align: justify;
+  /* use in line spacing like in word 1.5 ,2 etc */
+  line-height: 30px;
+}
+
+/* font styles */
+.title {
+  font-size: 50px;
+  font-weight: 100; /*100-900 */
+  font-style: italic;
+  /* montsera,nonito */
+  font-family: sans-serif;
+}
+
+/* Box model */
+.title {
+  /* padding:10px; */
+  /* inline means left-right */
+  /* block means top-bottom */
+  padding-inline: 20px;
+  padding-block: 30px;
+  /* margin-left: 15px;
+  margin-bottom: 30px; */
+  margin-inline: 20px;
+  margin-block: 10px;
+  /* size,type,color dotted dashed solid */
+  border: 10px solid blue;
+  border-top: 5px dashed green;
+  border-radius: 20px; /*it makes radius circle*/
+}
+
+/* display styles */
+.title {
+  display: block; /*inline block inline-block none*/
+}
+
+span {
+  display: block;
+}
+
+.card {
+  height: 100px;
+  width: 100px;
+  background-color: #3687b3;
+  border: 1px solid black;
+  /* margin: 10px; */
+  font-size: 50px;
+  text-align: center;
+}
+.card.two {
+  height: 150px; /*  */
+  width: 150px;
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* horizontally center */
+  align-items: center; /* vertically center */
+  /* justify-content: space-evenly; */
+  /* between-> right left align
+  evenly -> same spacing */
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+ul {
+  margin: 50px;
+  list-style-type: circle;
+
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+  background-color: azure;
+  padding: 1rem;
 }
