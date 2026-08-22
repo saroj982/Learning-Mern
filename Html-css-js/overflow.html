@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>overflow</title>
+    <style>
+        body {
+            height: 500vh;
+        }
+        .container {
+            width: 50%;
+            height: 200px;
+            background-color: #a2bef1;
+            overflow: auto;
+        }
+
+        .para {
+            text-align: justify;
+        }
+
+        .card {
+            height: 150px;
+            width: 200px;
+            background-color: cadetblue;
+            border: 1px solid black;
+        }
+
+        .box {
+            /* if we use position as absolute then we set top as 50 and left as 20 then it becomes body relative set hunxa position. if relative then it goes from the same where it is placed.*/
+            width: 500px;
+            height: 500px;
+            background-color: lightcoral;
+            position: relative;
+            /*static relative absolute fixed sticky */
+            /* top:50px;
+            left: 20px; */
+        }
+
+        .box1 {
+            width: 200px;
+            height: 200px;
+            background-color: lightgreen;
+            position: absolute; /* absolute: nearest parent ko realative if not parent relative then it goes the main body relative.*/
+            top: 10px;
+            left: 10px;
+            z-index: 1;
+        }
+        .box2 {
+            width: 200px;
+            height: 200px;
+            background-color: rgb(34, 160, 213);
+            position: fixed; /* always takes screen basis and also when we scroll it stays in the same position */
+            top: 30px;
+            left: 30px;
+        }
+        
+        .box3 {
+            width: 200px;
+            height: 200px;
+            background-color: rgb(238, 122, 215);
+            position: sticky; /* used for header stick if the content is scrollable */
+            top: 10px;
+            right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, ab doloremque. Iure
+            reprehenderit harum laboriosam quae quas placeat dolores distinctio est doloremque incidunt repellendus
+            inventore nesciunt magni et, ab architecto mollitia similique culpa sed animi blanditiis! Ad, aut corrupti
+            ipsam tempore praesentium sequi? Accusantium id impedit vero reprehenderit corporis dignissimos explicabo.
+            Corporis esse provident natus expedita doloribus, quia vel explicabo culpa! Dicta aspernatur laborum
+            accusamus officia atque odio vitae illo nam! Numquam esse totam eos repellendus illo tempora cupiditate
+            adipisci. Ipsa sapiente repellat ab iure aspernatur cupiditate labore perspiciatis assumenda eligendi odio
+            quae, obcaecati in repudiandae excepturi natus quam culpa rem earum dolore iste! Excepturi, molestias
+            labore, voluptas doloribus itaque quam in consectetur dolores ex maxime expedita quod asperiores dolore vero
+            libero unde quis beatae, porro nesciunt debitis earum architecto at officiis? Accusamus, architecto animi
+            nam, accusantium consequuntur rerum recusandae at saepe delectus nihil alias similique eveniet beatae neque
+            ad atque, sapiente ea reiciendis ipsum necessitatibus ab molestiae quia fugit. Perspiciatis quidem sit
+            ducimus totam eligendi deserunt commodi eaque eius, facere id reiciendis deleniti cum voluptates tempora,
+            enim culpa sed eum. Maxime, pariatur unde necessitatibus officiis commodi accusantium itaque ab nulla
+            numquam rem reprehenderit qui, provident odit quas ipsam libero aspernatur consequatur laboriosam culpa
+            ducimus at dolorum expedita. Consectetur beatae quia quisquam dolorem omnis exercitationem assumenda quidem
+            dolore nesciunt aspernatur, neque veniam, reprehenderit laudantium nisi nostrum alias ipsa iure ut dolores
+            quae! Omnis dicta quod ad quos. Assumenda nesciunt harum voluptate? Reiciendis, quos vel quasi neque dicta
+            reprehenderit adipisci quaerat aliquid, sit quam, harum perspiciatis saepe veritatis exercitationem quod
+            recusandae? Error consequatur id deserunt facilis at cum? Culpa, quasi ea. Suscipit soluta laborum minima
+            libero expedita eum, doloribus voluptates non laudantium quaerat, voluptatum, iste repellat alias! Vero
+            adipisci voluptates non quia rem sint voluptatum eos fuga quam sit, delectus provident ratione nisi, aliquam
+            earum fugiat deleniti vel, dolorem odio alias quae. Nesciunt neque, ullam dignissimos quaerat saepe officia
+            consequatur dolorem nihil repellendus voluptate. Vitae minima cum eveniet aliquid dolores, veritatis
+            doloremque magnam quo, eum voluptatibus expedita iusto exercitationem, saepe blanditiis excepturi harum modi
+            inventore! Eligendi dignissimos nesciunt corporis adipisci est id excepturi unde quos commodi! Magnam velit
+            quidem laborum molestiae ducimus inventore ipsum pariatur aut facilis adipisci iusto explicabo, soluta
+            numquam perspiciatis eos qui unde voluptatum magni fugit quod animi aperiam neque. Cupiditate quos nisi quas
+            mollitia sequi corrupti a magni excepturi, fuga dolore neque nostrum qui voluptas modi, facilis nesciunt
+            dolorem odio id? Pariatur, nobis asperiores. Omnis, eaque tempore quidem ad natus quos, quod iusto vero
+            laborum hic nemo nam iure adipisci cum nisi, perspiciatis explicabo veniam nesciunt. Voluptatum asperiores
+            enim doloremque, sit odit sed consectetur officia at natus quam aliquid modi nobis labore dolorem debitis
+            dicta porro adipisci! A deleniti minima architecto perferendis eos adipisci asperiores quaerat? Id fuga
+            incidunt excepturi earum hic debitis quas sit suscipit aspernatur corporis atque, facere sapiente nesciunt
+            numquam illo ducimus dicta illum ut voluptatum labore vitae, est voluptas. Temporibus unde veritatis
+            deserunt exercitationem voluptates non ipsum facere, dicta placeat. Aspernatur, rem quaerat.</p>
+        <!-- <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div> -->
+    </div>
+
+    <div class="box">
+        <div class="box1">box1</div>
+        <div class="box2">box2</div>
+        
+        <div class="box4">box4</div>
+    </div>
+    <div class="box3">box3</div>
+</body>
+
+</html>

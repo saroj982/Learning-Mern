@@ -156,15 +156,32 @@ Font-Family:San-serrif
 2. Text -> align, decoration, transform, word-spacing, lettor-spacing, text-shadow , line-height etc.
 3. Font -> size, weight, style, family
 4. Box model:
+<!-- margin->border->padding->content -->
 
 - margin-> inline , block, right, left, top, bottom etc.
 - padding -> inline , block, right, left, top, bottom etc.
 - border -> size,type,color -> dotted, solid, dashed etc. border-radius etc.
 
-<!-- margin->border->padding->content -->
-
 5. Display -> block inline inline-block none
 6. Flex->display flex, display-direction->row,column,reverse, justify-content->space between,evenly, around, align items->start,end,center,flex-wrap->nowrap,wrap,Gap->10px.
 7. List -> list style-> circle, square, none, disc etc.
-8. Units
-9. Pseudeo-class
+8. Units-> rem,px,%,vh etc
+   rem-> font-size, margin, padding, gap
+   px-> border, border-radius, shadow
+   %->width
+   vh-> height for herosection
+9. Pseudeo-class ->hover, active, focus, checked, disabled, required etc.
+10. Overflow -> auto, hidden, scroll, visible.
+11. Position -> position: relative,
+    absolute(tricky-> if p->relative tesko class ma hunxa natra body ko relative ma hanxa), fixed,
+    sticky(header).
+12. Table -> border-collapse:seperate, collapse nthchild->bgc
+13. Form
+14. Icon
+15. Background image
+16. Transform
+17. Animation
+18. Responsive design
+19. Grid
+20. Variables
+21. Misc

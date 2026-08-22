@@ -1,159 +1,154 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Table</title>
-    <style>
-      table,
-      td,
-      th {
-        border: 1px solid black;
-        border-collapse: collapse;
-      }
-    </style>
-  </head>
 
-  <body>
-    <h1>Table</h1>
-    <table>
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Age</th>
-          <th>Address</th>
-          <th colspan="2">Phone</th>
-          <th>Provience</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Ram shrestha</td>
-          <td>20</td>
-          <td>Dharan</td>
-          <td>9812312131</td>
-          <td></td>
-          <td rowspan="2">Koshi</td>
-        </tr>
-        <tr>
-          <td>hari thakuri</td>
-          <td>18</td>
-          <td>ithari</td>
-          <td>984567892</td>
-          <td>989888888</td>
-        </tr>
-        <tr>
-          <td>sita gautam</td>
-          <td>13</td>
-          <td>banepa</td>
-          <td>984545454</td>
-          <td></td>
-          <td>Bagmati</td>
-        </tr>
-      </tbody>
-    </table>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Table</title>
+  <style>
+    table,
+    td,
+    th {
+      border: 1px solid black;
+      border-collapse: separate;
+      padding: 5px;
+    }
 
-    <h1>Profile form</h1>
-    <form action="/profile" method="get">
-      <label for="name">Name</label>
-      <input
-        type="text"
-        id="name"
-        placeholder="Enter your name"
-        minlength="3"
-        maxlength="50"
-      />
-      <br />
+    td:nth-child(2n) {
+      background-color: #4889d3;
+    }
 
-      <label for="age">Age</label>
-      <input type="number" id="age" min="1" max="100" />
-      <br />
+    td:nth-child(2n-1) {
+      background-color: #c047dc;
+    }
+    th {
+      background-color: #62c827;
+    }
+  </style>
+</head>
 
-      <label for="email">Email</label>
-      <input type="email" id="email" placeholder="Enter your email" />
-      <br />
+<body>
+  <h1>Table</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Address</th>
+        <th colspan="2">Phone</th>
+        <th>Provience</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Ram shrestha</td>
+        <td>20</td>
+        <td>Dharan</td>
+        <td>9812312131</td>
+        <td></td>
+        <td rowspan="2">Koshi</td>
+      </tr>
+      <tr>
+        <td>hari thakuri</td>
+        <td>18</td>
+        <td>ithari</td>
+        <td>984567892</td>
+        <td>989888888</td>
+      </tr>
+      <tr>
+        <td>sita gautam</td>
+        <td>13</td>
+        <td>banepa</td>
+        <td>984545454</td>
+        <td></td>
+        <td>Bagmati</td>
+      </tr>
+    </tbody>
+  </table>
 
-      <label for="phone">Phone</label>
-      <input type="tel" id="phone" value="+977" />
-      <br />
+  <h1>Profile form</h1>
+  <form action="/profile" method="get">
+    <label for="name">Name</label>
+    <input type="text" id="name" placeholder="Enter your name" minlength="3" maxlength="50" />
+    <br />
 
-      <label for="password">Password</label>
-      <input type="password" id="password" name="password" />
-      <br />
+    <label for="age">Age</label>
+    <input type="number" id="age" min="1" max="100" />
+    <br />
 
-      <!-- checkbox for multiselect-->
-      <label for="hobbies">Hobbies</label>
-      <input type="checkbox" />Music <input type="checkbox" />Gaming
-      <input type="checkbox" />Dancing <input type="checkbox" />Movies
-      <input type="checkbox" checked />Swimming
-      <br />
+    <label for="email">Email</label>
+    <input type="email" id="email" placeholder="Enter your email" />
+    <br />
 
-      <!-- radio single select-->
-      <label for="gender">Gender</label>
-      <input type="radio" name="gender" />Male
-      <input type="radio" name="gender" />Femlale
-      <input type="radio" name="gender" />Other
-      <br />
+    <label for="phone">Phone</label>
+    <input type="tel" id="phone" value="+977" />
+    <br />
 
-      <label for="docs">File</label>
-      <input
-        type="file"
-        name="file"
-        id="docs"
-        accept=".jpeg,.png,.pdf"
-        multiple
-      />
-      <br />
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" />
+    <br />
 
-      <label for="meeting">Meeting date</label>
-      <input type="date" id="meeting" />
-      <input type="time" id="meeting" />
-      <br />
+    <!-- checkbox for multiselect-->
+    <label for="hobbies">Hobbies</label>
+    <input type="checkbox" />Music <input type="checkbox" />Gaming
+    <input type="checkbox" />Dancing <input type="checkbox" />Movies
+    <input type="checkbox" checked />Swimming
+    <br />
 
-      <label for="ratings">Ratings</label>
-      <input
-        type="range"
-        name="rating"
-        id="ratings"
-        min="1"
-        max="10"
-        step="0.5"
-      />
-      <br />
+    <!-- radio single select-->
+    <label for="gender">Gender</label>
+    <input type="radio" name="gender" />Male
+    <input type="radio" name="gender" />Femlale
+    <input type="radio" name="gender" />Other
+    <br />
 
-      <label for="color">Color</label>
-      <input type="color" id="color" />
-      <br />
+    <label for="docs">File</label>
+    <input type="file" name="file" id="docs" accept=".jpeg,.png,.pdf" multiple />
+    <br />
 
-      <label for="search">Search</label>
-      <input type="search" id="search" list="animals"/>
-      <datalist id="animals">
-        <option value="Cat">Cat</option>
-        <option value="Dog">Dog</option>
-        <option value="Elephant">Elephant</option>
-        <option value="Tiger">Tiger</option>
-        <option value="Leopard">Leopard</option>
-        <option value="Rabbit">Rabbit</option>
-      </datalist>
-      <br />
+    <label for="meeting">Meeting date</label>
+    <input type="date" id="meeting" />
+    <input type="time" id="meeting" />
+    <br />
 
-      <!-- dropdown -->
-      <label for="class">class</label>
-      <select name="class" id="class">
-        <option value="" disabled selected >Select your class</option>
-        <option value="class1">Class1</option>
-        <option value="class2">Class2</option>
-        <option value="class3">Class3</option>
-        <option value="class4">Class4</option>
-        <option value="class5">Class5</option>
-      </select>
-      <br>
+    <label for="ratings">Ratings</label>
+    <input type="range" name="rating" id="ratings" min="1" max="10" step="0.5" />
+    <br />
 
-      <label for="Message">Message</label>
-      <textarea name="message" id="Message"></textarea>
-      <br />
+    <label for="color">Color</label>
+    <input type="color" id="color" />
+    <br />
 
-      <button type="submit" title="save">Save Profile</button>
-    </form>
-  </body>
+    <label for="search">Search</label>
+    <input type="search" id="search" list="animals" />
+    <datalist id="animals">
+      <option value="Cat">Cat</option>
+      <option value="Dog">Dog</option>
+      <option value="Elephant">Elephant</option>
+      <option value="Tiger">Tiger</option>
+      <option value="Leopard">Leopard</option>
+      <option value="Rabbit">Rabbit</option>
+    </datalist>
+    <br />
+
+    <!-- dropdown -->
+    <label for="class">class</label>
+    <select name="class" id="class">
+      <option value="" disabled selected>Select your class</option>
+      <option value="class1">Class1</option>
+      <option value="class2">Class2</option>
+      <option value="class3">Class3</option>
+      <option value="class4">Class4</option>
+      <option value="class5">Class5</option>
+    </select>
+    <br>
+
+    <label for="Message">Message</label>
+    <textarea name="message" id="Message"></textarea>
+    <br />
+
+    <button type="submit" title="save">Save Profile</button>
+  </form>
+</body>
+
 </html>

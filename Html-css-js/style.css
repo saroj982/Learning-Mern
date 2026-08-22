@@ -2,6 +2,9 @@
   margin: 0;
   padding: 0;
 }
+html {
+  font-size: 20px;
+}
 
 #title {
   color: rgb(13, 149, 198);
@@ -113,7 +116,6 @@ span {
 ul {
   margin: 50px;
   list-style-type: circle;
-
 }
 
 nav ul {
@@ -122,4 +124,73 @@ nav ul {
   gap: 10px;
   background-color: azure;
   padding: 1rem;
+}
+
+/* Units */
+/* Units: px(pixels), em (relate to parent), rem(relative to root html)
+vh (Viewing height), vw(viewing width), % etc. */
+.container {
+  height: 50vh;
+  width: 50%;
+  background-color: #bfed8e;
+  /* align-items: center;
+  justify-content: center;
+  display: flex; */
+  font-size: 30px;
+}
+
+.inner-Box {
+  height: 100px;
+  width: 100px;
+  background-color: #3369d5;
+  font-size: 1em;
+  font-size: 1.5rem;
+}
+
+/** rem: font-size, margin, padding, gap
+px: border,border-radius, top bottom,right,left shadow etc.
+vh: height for herosection
+width is in percent **/
+
+/* Pseudo class -> hover, active , focus, checked , disabled, required, first-last child, nth child*/
+.submit {
+  padding-inline: 2rem;
+  padding-block: 0.5rem;
+  border-radius: 10px;
+  background-color: #eea5a5;
+}
+
+.submit:hover {
+  background-color: #8f0303;
+  font-weight: bold;
+}
+
+.submit:active {
+  background-color: #441bcd;
+  transform: scale(0.95);
+}
+
+input:focus {
+  outline: 1px solid red;
+  border: none;
+}
+
+ul li:first-child {
+  color: red;
+}
+
+ul li:last-child {
+  color: rgb(14, 77, 178);
+}
+
+li:nth-child(4) {
+  color: green;
+}
+
+nav ul li:nth-child(2n) {
+  color: blue;
+}
+
+nav ul li:nth-child(2n-1) {
+  color: red;
 }
