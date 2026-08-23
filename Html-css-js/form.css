@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+form {
+  max-width: 50%;
+  margin-inline: auto;
+  background-color: #f2f2f2;
+  padding-inline: 2rem;
+  margin-block: 2rem;
+  border-radius: 10px;
+  /* hoz ver spread color */
+  box-shadow:2px 2px 5px 5px #f0fff2 ;
+}
+
+.head {
+  text-align: center;
+  margin-block: 1rem;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+}
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid #2b89d680;
+  border-color: white;
+}
+
+input[type="checkbox"],
+input[type="radio"],
+input[type="range"] {
+  width: auto;
+  outline: none;
+  margin: 0;
+}
+
+input[type="color"] {
+  width: 50px;
+  outline: none;
+  margin: 0;
+}
+
+.hobbies,
+.gender {
+  display: flex;
+  align-items: center;
+  margin-block: 0.5rem;
+  gap: 0.5rem;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+button {
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  background-color: #3086cd;
+  color: white;
+  padding: 0.5rem;
+}
+button:hover {
+  background-color: #0727fb;
+  cursor:pointer;
+}

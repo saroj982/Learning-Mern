@@ -174,9 +174,9 @@ Font-Family:San-serrif
 10. Overflow -> auto, hidden, scroll, visible.
 11. Position -> position: relative,
     absolute(tricky-> if p->relative tesko class ma hunxa natra body ko relative ma hanxa), fixed,
-    sticky(header).
+    sticky(header). and use Z-index:1 to upfront.
 12. Table -> border-collapse:seperate, collapse nthchild->bgc
-13. Form
+13. Form ->
 14. Icon
 15. Background image
 16. Transform
