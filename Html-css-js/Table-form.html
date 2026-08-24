@@ -27,68 +27,68 @@
     }
   </style>
   <link rel="stylesheet" href="form.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+    integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
 
   <h1 class="head">Profile form</h1>
   <form action="/profile" method="get">
-    <label for="name">Name</label>
+    <label for="name"><i class="fa-solid fa-user"></i>Name</label>
     <input type="text" id="name" placeholder="Enter your name" minlength="3" maxlength="50" />
-    <br />
 
-    <label for="age">Age</label>
-    <input type="number" id="age" min="1" max="100" placeholder="Enter age" />
-    <br />
+    <label for="age"><i class="fa-solid fa-cake"></i>Age</label>
+    <input type="number" id="age" min="1" max="100" placeholder="Enter age">
 
-    <label for="email">Email</label>
+    <label for="email"><i class="fa-solid fa-envelope"></i>Email</label>
     <input type="email" id="email" placeholder="Enter your email" />
-    <br />
 
-    <label for="phone">Phone</label>
+    <label for="phone"><i class="fa-solid fa-phone"></i>Phone</label>
     <input type="tel" id="phone" value="+977" />
-    <br />
 
-    <label for="password">Password</label>
-    <input type="password" id="password" name="password" />
-    <br />
+    <label for="password"><i class="fa-solid fa-lock"></i>Password</label>
+    <div class="password">
+      <input type="password" id="password" name="password" />
+      <i class="fa-solid fa-eye"></i>
+    </div>
 
     <!-- checkbox for multiselect-->
     <div class="hobbies">
-      <label for="hobbies">Hobbies</label>
+      <label for="hobbies"><i class="fa-solid fa-running"></i>Hobbies</label>
       <input type="checkbox" />Music <input type="checkbox" />Gaming
       <input type="checkbox" />Dancing <input type="checkbox" />Movies
       <input type="checkbox" checked />Swimming
     </div>
-    <br />
 
     <!-- radio single select-->
-    <label for="gender">Gender</label>
+    <label for="gender"><i class="fa-solid fa-mars-and-venus"></i>Gender</label>
     <div class="gender">
       <input type="radio" name="gender" />Male
       <input type="radio" name="gender" />Femlale
       <input type="radio" name="gender" />Other
     </div>
-    <br />
 
-    <label for="docs">File</label>
+    <label for="docs"><i class="fa-solid fa-file"></i>File</label>
     <input type="file" name="file" id="docs" accept=".jpeg,.png,.pdf" multiple />
-    <br />
 
-    <label for="meeting">Meeting date</label>
+    <label for="meeting"><i class="fa-solid fa-calendar"></i>Meeting date</label>
     <input type="date" id="meeting" />
     <input type="time" id="meeting" />
-    <br />
 
-    <label for="ratings">Ratings</label>
+    <!-- <label for="ratings"><i class="fa-solid fa-star"></i>Ratings</label>
     <input type="range" name="rating" id="ratings" min="1" max="10" step="0.5" />
-    <br />
 
     <label for="color">Color</label>
-    <input type="color" id="color" />
-    <br />
+    <input type="color" id="color" /> -->
 
-    <label for="search">Search</label>
+    <label for="search"><i class="fa-solid fa-magnifying-glass"></i>Search</label>
     <input type="search" id="search" list="animals" />
     <datalist id="animals">
       <option value="Cat">Cat</option>
@@ -98,10 +98,9 @@
       <option value="Leopard">Leopard</option>
       <option value="Rabbit">Rabbit</option>
     </datalist>
-    <br />
 
     <!-- dropdown -->
-    <label for="class">class</label>
+    <label for="class"><i class="fa-solid fa-book-open"></i>class</label>
     <select name="class" id="class">
       <option value="" disabled selected>Select your class</option>
       <option value="class1">Class1</option>
@@ -110,13 +109,11 @@
       <option value="class4">Class4</option>
       <option value="class5">Class5</option>
     </select>
-    <br>
 
-    <label for="Message">Message</label>
+    <label for="Message"><i class="fa-solid fa-message"></i>Message</label>
     <textarea name="message" id="Message"></textarea>
-    <br />
 
-    <button type="submit" title="save">Save Profile</button>
+    <button type="submit" title="save"><i class="fa-solid fa-save"></i>Save Profile</button>
   </form>
   <h1>Table</h1>
   <table>

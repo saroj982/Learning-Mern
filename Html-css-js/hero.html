@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>herosection</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        video {
+            height: 100vh;
+            width: auto;
+            display: block;
+            margin-inline: auto;
+            position: absolute;
+            z-index: -1;
+        }
+
+        .container {
+            position: relative;
+            height: 100vh;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 100vh;
+            background: linear-gradient(120deg, #010101, #0000004f);
+            /* backdrop-filter: blur(10px); */
+        }
+
+        .content {
+            display: flex;
+            align-items: start;
+            justify-content: center;
+            height: 100%;
+            flex-direction: column;
+            max-width: 50%;
+            padding: 2rem;
+            font-family: serif;
+            color:red;
+            position: relative;
+            z-index: 999;
+            gap: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="overlay"></div>
+        <video src="hero.mp4" controls""></video>
+       <div class="content">
+        <h1>Hello World</h1>
+       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat laboriosam quam suscipit, numquam quisquam illum sequi deleniti dolores molestias laborum corrupti quasi cupiditate nesciunt tempora rerum consectetur, inventore laudantium omnis, quis quidem asperiores? Quasi odio error quaerat itaque? Delectus odit dolorem ratione error perspiciatis porro non accusantium molestias magni! Illum.</p>
+       <button>Learnmore</button>
+       </div>
+    </div>
+</body>
+
+</html>

@@ -171,14 +171,14 @@ Font-Family:San-serrif
    %->width
    vh-> height for herosection
 9. Pseudeo-class ->hover, active, focus, checked, disabled, required etc.
-10. Overflow -> auto, hidden, scroll, visible.
+10. Overflow -> auto, hidden, scroll, visible.-> for scrollable.
 11. Position -> position: relative,
     absolute(tricky-> if p->relative tesko class ma hunxa natra body ko relative ma hanxa), fixed,
     sticky(header). and use Z-index:1 to upfront.
 12. Table -> border-collapse:seperate, collapse nthchild->bgc
-13. Form ->
-14. Icon
-15. Background image
+13. Form -> for text we use poppins from the google fonts.
+14. Icon->https://cdnjs.com/libraries/font-awesome we use <i class="fa-solid fa-magnifying-glass"></i>
+15. Background image -> size->cover,contain, position->bottom,center,right, repeat->no repeat,
 16. Transform
 17. Animation
 18. Responsive design
