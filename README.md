@@ -190,8 +190,12 @@ Font-Family:San-serrif
 
 16. Transform -> transform:translate(x,yaxis) rotate(45deg) scale(1.5) :skew(45deg) Transition:all/transform/scale 0.5s linear/ease/in/out.
 
-17. Animation
+17. Grid
+
 18. Responsive design
-19. Grid
+
+19. Animation
+
 20. Variables
+
 21. Misc
