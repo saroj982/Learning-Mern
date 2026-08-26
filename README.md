@@ -202,10 +202,14 @@ Font-Family:San-serrif
 18. Animation -> @keyframes animation1 {
     0% {transform:translate}
     50% {}
+    }
     animation: animation name time linear/ease delay infinite/times
-}
 
-19. Responsive design
+19. Responsive design ->
+    first make the mobile view
+    tablet screen(480-768px) large tablet(769-1200px) and laptop and large screen(min-width:1201)
+    @media (min-width: 480px) and (max-width:768px) {
+    }
 
 20. Variables
 
