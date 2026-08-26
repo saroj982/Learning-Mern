@@ -190,11 +190,22 @@ Font-Family:San-serrif
 
 16. Transform -> transform:translate(x,yaxis) rotate(45deg) scale(1.5) :skew(45deg) Transition:all/transform/scale 0.5s linear/ease/in/out.
 
-17. Grid
+17. Grid -> display:grid, grid-template-columns: 1fr 2fr 1fr 3fr; instad of 1 fr use auto. and gridarea in sub class then in main class
+    grid-template-areas: "box1 box2 box5 box6"
+    "box3 box3 box3 box7"
+    "box4 box4 box8 box8"
+    "box9 box10 box10 .";
+    and the best way with responsive
+    grid-template-columns: repeat(auto-fit, minmax(150px,1fr)); in 1 fr use auto also.
+    another is grid column:1/3etc.
 
-18. Responsive design
+18. Animation -> @keyframes animation1 {
+    0% {transform:translate}
+    50% {}
+    animation: animation name time linear/ease delay infinite/times
+}
 
-19. Animation
+19. Responsive design
 
 20. Variables
 

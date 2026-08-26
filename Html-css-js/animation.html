@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .box {
+            height: 50px;
+            width: 50px;
+            background-color: #523bd7;
+            /* animation: animationname time linear/ease delaysec repeat/infinite 3 etc. */
+            /* animation: animation1 10s ease-in-out 5s 2; */
+            animation: animation2 4s linear infinite;
+            border-radius: 50%;
+        }
+
+        /* .box:hover {
+            transform: translateY(-10px);
+        } */
+
+        @keyframes animation1 {
+            0% {
+                transform: translateX(0, 0);
+                background-color: #523bd7;
+
+            }
+
+            20% {
+                transform: translateX(200px) scale(1.5);
+            }
+
+            50% {
+                transform: translateY(200px) rotate(125deg);
+                background-color: red;
+
+            }
+
+            100% {
+                transform: translate(0, 0);
+                background-color: darksalmon;
+
+            }
+        }
+
+        @keyframes animation2 {
+            50% {
+                transform: translateY(50px)
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+</body>
+
+</html>
