@@ -211,6 +211,6 @@ Font-Family:San-serrif
     @media (min-width: 480px) and (max-width:768px) {
     }
 
-20. Variables
+20. Variables -> 
 
 21. Misc
